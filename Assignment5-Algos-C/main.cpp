@@ -17,8 +17,11 @@ int main()
 			case 'r':
 				SelectFile();
 				break;
-			case 'd':
+			case 'l':
 				longestChain();
+				break;
+			case 'e':
+				nullEntries();
 				break;
 			case 'q':
 				Quit = true;
@@ -35,9 +38,10 @@ char Menu()
 {
 	char Cmd;
 	cout << endl << "*********************************" << endl;
-	cout << "*     BST Sort                  *" << endl;
+	cout << "*     Hash Map                  *" << endl;
 	cout << "*     (r)ead data file          *" << endl;
-	cout << "*     (d)isplay stack           *" << endl;
+	cout << "*     (l)ongest chain           *" << endl;
+	cout << "*     (e)mpty entries           *" << endl;
 	cout << "*     (q)uit                    *" << endl;
 	cout << "*********************************" << endl;
 	cout << "Command: ";

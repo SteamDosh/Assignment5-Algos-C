@@ -33,3 +33,4 @@ void ReadFile(string aFileName);
 void insertData(int aNum);
 void insertNode(node* aNode, int aNum);
 void longestChain();
+void nullEntries();

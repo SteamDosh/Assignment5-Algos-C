@@ -38,7 +38,7 @@ void ReadFile(string aFileName)
 void insertData(int aInt)
 {
 	int key = aInt % 100;
-	/*if (Map.find(key) == Map.end())
+	/* if (Map.find(key) == Map.end())
 	{
 		Map.insert(newPair(key, new node(aInt)));
 	}
@@ -74,7 +74,7 @@ void longestChain()
 {
 	int highest = 0;
 	int highestCount = 0;
-	for (int i = 0; i < MAXSIZE; i++)
+	for (int i = 0; i < MAXSIZE-1; i++)
 	{
 		int count = 0;
 		if (arrayMap[i])
@@ -109,4 +109,17 @@ void longestChain()
 		}
 	}*/
 	cout << highest << " has the longest chain with " << highestCount << endl;
+}
+
+void nullEntries()
+{
+	int counter = 0;
+	for (int i = 0; i < MAXSIZE-1; i++)
+	{
+		if (!arrayMap[i])
+		{
+			counter++;
+		}
+	}
+	cout << "There are " << counter << " empty entries" << endl;
 }
